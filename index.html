@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="scoreboard">
+            <div id="oWins" class="result">
+                <p>&#128309;</p>
+                0 wins
+            </div>
+            <div id="xWins" class="result">
+                <p>&#10060;</p>
+                0 wins
+            </div>
+            <div id="draws" class="result">
+                <p>&#9878;</p>
+                0 draws
+            </div>
+            <div id="restartScoreboard" class="result" onclick="restartScoreBoard()">
+                <img src="assets/restart.png" alt="restart"/>
+                restart
+            </div>
+        </div>
+        <div class="stage">
+            <div id="0" class="square"></div>
+            <div id="1" class="square bright bleft"></div>
+            <div id="2" class="square"></div>
+            <div id="3" class="square btop bbottom"></div>
+            <div id="4" class="square btop bright bbottom bleft"></div>
+            <div id="5" class="square btop bbottom"></div>
+            <div id="6" class="square"></div>
+            <div id="7" class="square bright bleft"></div>
+            <div id="8" class="square"></div>
+            <div id="risk1" class="risksHorizontal" ></div>
+            <div id="risk2" class="risksHorizontal"></div>
+            <div id="risk3" class="risksHorizontal"></div>
+            <div id="risk4" class="risksVertical"></div>
+            <div id="risk5" class="risksVertical"></div>
+            <div id="risk6" class="risksVertical"></div>
+            <div id="risk7" class="risksHorizontal"></div>
+            <div id="risk8" class="risksHorizontal"></div>
+        </div>
+        <div></div>
+    </div>
+
+    <script src="./js/game.js"></script>
+    <script src="./js/interface.js"></script>
+</body>
+
+</html>
